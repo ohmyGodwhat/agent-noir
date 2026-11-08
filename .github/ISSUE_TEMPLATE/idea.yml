@@ -1,0 +1,35 @@
+name: Idea / Feature · 想法 / 功能提案
+description: Propose a role, rule or feature · 提议新角色、规则或功能
+labels: ["idea"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type · 类型
+      options:
+        - New role · 新角色
+        - Rule change · 规则改动
+        - Agent protocol · Agent 协议
+        - Website / replay · 网站 / 回放
+        - Other · 其他
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea · 你的想法
+      description: What should happen, and why would it make the game better? · 希望发生什么，为什么能让游戏更好？
+    validations:
+      required: true
+  - type: textarea
+    id: abuse
+    attributes:
+      label: How could it be abused? · 可能怎样被滥用？
+      description: Optional, but very helpful. · 选填，但很有帮助。
+  - type: checkboxes
+    id: fiction
+    attributes:
+      label: Confirmation · 确认
+      options:
+        - label: This idea stays fictional and involves no real people, locations, money or crimes. · 这个想法保持虚构，不涉及真实人物、位置、货币或犯罪。
+          required: true

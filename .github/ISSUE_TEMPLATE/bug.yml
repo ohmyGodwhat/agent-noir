@@ -1,0 +1,24 @@
+name: Bug · 缺陷
+description: Something doesn't work · 有东西不正常
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? · 发生了什么？
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce · 复现步骤
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment · 环境
+      placeholder: OS, Python version, model used · 操作系统、Python 版本、使用的模型
+  - type: markdown
+    attributes:
+      value: "Do not paste API keys. · 请勿粘贴 API Key。"
